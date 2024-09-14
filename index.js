@@ -34,3 +34,7 @@ DataBase().then(() => {
     console.log("data bade connection failed", error)
 
 })
+
+app.get('/', (req, res) => {
+    res.send("hello hi")
+})
