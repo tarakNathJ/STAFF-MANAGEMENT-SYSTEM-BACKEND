@@ -32,7 +32,7 @@ Router.post('/UpdateUser', auth, IsAdmin, UpdateUserDetails);
 Router.post('/Sallary', auth, IsAdmin, ProvideSallary);
 Router.get('/AllEmploy', Allemploy);
 Router.post('/Search', SearchEmploy);
-Router.get('/EmployDetails', auth, UserAllDetails);
+Router.post('/EmployDetails', auth, UserAllDetails);
 Router.post('/AdminProfile', auth, IsAdmin, UpdateAdmin);
 Router.post('/AdminDetails', auth, IsAdmin, AdminDetails)
 
