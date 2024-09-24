@@ -6,7 +6,7 @@ const User = require('../Modules/User');
 exports.auth = async(req, res, next) => {
     try {
         // extrack token
-        const token = req.cookies.__cf_bm || req.header("Authorisation").replace("Bearer ", "");
+        const token = req.cookies.token || req.header("Authorisation").replace("Bearer ", "");
         // chack token are present or not
 
 
